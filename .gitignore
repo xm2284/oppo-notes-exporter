@@ -1,0 +1,22 @@
+node_modules/
+dist/
+output/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Sensitive local data
+*profile*/
+edgeprofile*/
+chromeprofile*/
+*.csv
+*.json
+*.md
+!README.md
+!README_EN.md
+!CHANGELOG.md
+
+# Secrets
+.env
+.env.*
