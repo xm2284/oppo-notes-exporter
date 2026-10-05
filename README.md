@@ -1,14 +1,15 @@
-# OPPO Cloud Notes Exporter (ColorOS 便签全量导出工具)
+# OPPO / 一加 (OnePlus) 云便签全量导出工具 (ColorOS Notes Exporter)
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
   <img src="https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green.svg" alt="Node" />
+  <img src="https://img.shields.io/badge/Device-OPPO%20%7C%20OnePlus%20%7C%20realme-red.svg" alt="Devices" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
 </p>
 
 <p align="center">
-  <b>一键将 OPPO 云服务（ColorOS 随身工作台）中的全部便签导出为 Markdown、CSV 与 JSON。</b><br>
+  <b>一键将 OPPO / 一加 (OnePlus / ColorOS 随身工作台) 中的全部便签导出为 Markdown、CSV 与 JSON。</b><br>
   专为换机备份、知识库迁移（Obsidian / Notion / Logseq）与本地离线归档打造。
 </p>
 

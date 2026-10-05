@@ -1,11 +1,12 @@
-# OPPO Cloud Notes Exporter (ColorOS Notes Backup Tool)
+# OPPO / OnePlus Cloud Notes Exporter (ColorOS Notes Backup Tool)
 
 [中文文档 (Chinese)](README.md) | English Documentation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green.svg)](https://nodejs.org/)
+[![Devices](https://img.shields.io/badge/Devices-OPPO%20%7C%20OnePlus%20%7C%20realme-red.svg)](https://cloud.oppo.com/)
 
-One-click exporter for OPPO Cloud (ColorOS Sticky Notes) to **Markdown, CSV, and JSON** formats. Designed for mobile switching backups and second-brain migrations (Obsidian, Notion, Logseq).
+One-click exporter for OPPO / OnePlus Cloud (ColorOS Sticky Notes) to **Markdown, CSV, and JSON** formats. Designed for mobile switching backups and second-brain migrations (Obsidian, Notion, Logseq).
 
 ---
 
