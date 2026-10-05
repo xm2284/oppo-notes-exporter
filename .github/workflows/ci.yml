@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm ci --omit=dev || npm install
+      - name: Syntax check
+        run: |
+          node --check src/index.mjs
+          node --check src/browser.mjs
+          node --check src/extractor.mjs
+          node --check src/parser.mjs
+          node --check src/formatters/index.mjs
+          node --check bin/cli.mjs

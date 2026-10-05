@@ -1,0 +1,35 @@
+name: Bug Report
+description: 提交程序运行中的报错或异常行为
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢您提交 Bug 反馈！请确保没有在 Issues 中泄漏个人敏感数据（如手机号、Token、便签正文）。
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统与版本
+      placeholder: Windows 11 / macOS Sonoma / Ubuntu 22.04
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器名称与版本
+      placeholder: Microsoft Edge 154 / Google Chrome 128
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js 版本
+      placeholder: node -v 输出 (例如 v20.10.0)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 错误描述与控制台报错信息
+      placeholder: 请在此处粘贴详细的终端控制台输出或错误截图...
+    validations:
+      required: true

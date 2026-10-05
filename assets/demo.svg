@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500">
+  <defs>
+    <style>
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes line1 { 0% { opacity: 0; } 5% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line2 { 0%, 8% { opacity: 0; } 14% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line3 { 0%, 16% { opacity: 0; } 22% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line4 { 0%, 25% { opacity: 0; } 32% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line5 { 0%, 35% { opacity: 0; } 42% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line6 { 0%, 45% { opacity: 0; } 55% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line7 { 0%, 60% { opacity: 0; } 70% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line8 { 0%, 75% { opacity: 0; } 85% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes line9 { 0%, 88% { opacity: 0; } 95% { opacity: 1; } 100% { opacity: 1; } }
+
+      .term-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 12px; }
+      .title-bar { fill: #161b22; }
+      .btn-red { fill: #ff5f56; }
+      .btn-yellow { fill: #ffbd2e; }
+      .btn-green { fill: #27c93f; }
+      .title-text { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 13px; font-weight: 500; }
+      
+      .t { font-family: "Cascadia Code", "Fira Code", Consolas, Monaco, "Courier New", monospace; font-size: 13.5px; }
+      .c-dim { fill: #6e7681; }
+      .c-white { fill: #e6edf3; }
+      .c-green { fill: #3fb950; font-weight: 600; }
+      .c-cyan { fill: #58a6ff; font-weight: 600; }
+      .c-yellow { fill: #d29922; }
+      .c-purple { fill: #bc8cff; }
+      .cursor { fill: #58a6ff; animation: blink 1s infinite; }
+
+      .l1 { animation: line1 9s infinite; }
+      .l2 { animation: line2 9s infinite; }
+      .l3 { animation: line3 9s infinite; }
+      .l4 { animation: line4 9s infinite; }
+      .l5 { animation: line5 9s infinite; }
+      .l6 { animation: line6 9s infinite; }
+      .l7 { animation: line7 9s infinite; }
+      .l8 { animation: line8 9s infinite; }
+      .l9 { animation: line9 9s infinite; }
+    </style>
+  </defs>
+
+  <!-- Window Container -->
+  <rect x="10" y="10" width="860" height="480" class="term-bg" />
+  
+  <!-- Titlebar -->
+  <path d="M 10,22 Q 10,10 22,10 L 858,10 Q 870,10 870,22 L 870,48 L 10,48 Z" class="title-bar" />
+  <circle cx="32" cy="29" r="6" class="btn-red" />
+  <circle cx="52" cy="29" r="6" class="btn-yellow" />
+  <circle cx="72" cy="29" r="6" class="btn-green" />
+  <text x="440" y="33" text-anchor="middle" class="title-text">Terminal — oppo-notes-exporter — 880x500</text>
+
+  <!-- Terminal Content -->
+  <g transform="translate(32, 85)">
+    <!-- Command Prompt -->
+    <g class="l1">
+      <text y="0" class="t c-green">➜</text>
+      <text x="20" y="0" class="t c-cyan">oppo-notes-exporter</text>
+      <text x="180" y="0" class="t c-dim">git:(main)</text>
+      <text x="260" y="0" class="t c-white">npx oppo-notes-exporter</text>
+    </g>
+
+    <!-- Banner -->
+    <g class="l2" transform="translate(0, 32)">
+      <text y="0" class="t c-cyan">========================================================</text>
+      <text y="22" class="t c-purple">       OPPO Cloud Notes Exporter (ColorOS 便签备份)</text>
+      <text y="44" class="t c-cyan">========================================================</text>
+    </g>
+
+    <!-- Browser Detect -->
+    <g class="l3" transform="translate(0, 108)">
+      <text y="0" class="t c-green">✔</text>
+      <text x="18" y="0" class="t c-white">检测到可用浏览器:</text>
+      <text x="165" y="0" class="t c-dim">C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</text>
+      <text y="24" class="t c-yellow">🚀 正在启动独立调试浏览器 (端口 9222)...</text>
+      <text y="46" class="t c-white">👉 请在弹出的浏览器中登录 OPPO 云服务，确认列表已展示后按回车。</text>
+    </g>
+
+    <!-- Connect & Scan -->
+    <g class="l4" transform="translate(0, 185)">
+      <text y="0" class="t c-dim">[用户按回车键]</text>
+      <text y="24" class="t c-green">🔗 成功通过 Chrome DevTools Protocol (CDP) 接管浏览器宿主环境</text>
+    </g>
+
+    <!-- Progress 1 -->
+    <g class="l5" transform="translate(0, 240)">
+      <text y="0" class="t c-yellow">[scroll]</text>
+      <text x="70" y="0" class="t c-white">自动遍历虚拟列表: 已检索到</text>
+      <text x="270" y="0" class="t c-green">407</text>
+      <text x="300" y="0" class="t c-white">篇便签摘要</text>
+    </g>
+
+    <!-- Progress 2 -->
+    <g class="l6" transform="translate(0, 268)">
+      <text y="0" class="t c-cyan">[detail]</text>
+      <text x="70" y="0" class="t c-white">触发运行时解密注入: [407/407] ████████████████████ 100%</text>
+    </g>
+
+    <!-- Success Output -->
+    <g class="l7" transform="translate(0, 305)">
+      <text y="0" class="t c-green">🎉 提取完成！共获取到 407 篇完整便签 (含长文本与复选框排版)。</text>
+      <text y="22" class="t c-dim">💾 正在导出结构化文件至 ./output ...</text>
+    </g>
+
+    <!-- File list -->
+    <g class="l8" transform="translate(0, 355)">
+      <text y="0" class="t c-green">✔</text>
+      <text x="18" y="0" class="t c-white">output/notes.json</text>
+      <text x="220" y="0" class="t c-dim">(900 KB, 完整元数据与原始 HTML)</text>
+      
+      <text y="20" class="t c-green">✔</text>
+      <text x="18" y="20" class="t c-white">output/notes.csv</text>
+      <text x="220" y="20" class="t c-dim">(374 KB, Excel 直开不乱码)</text>
+
+      <text y="40" class="t c-green">✔</text>
+      <text x="18" y="40" class="t c-white">output/notes.md</text>
+      <text x="220" y="40" class="t c-dim">(365 KB, 汇总 Markdown 排版)</text>
+
+      <text y="60" class="t c-green">✔</text>
+      <text x="18" y="60" class="t c-white">output/markdown/</text>
+      <text x="220" y="60" class="t c-cyan">(407 个独立 .md 文件，适配 Obsidian / Notion)</text>
+    </g>
+
+    <!-- Prompt cursor -->
+    <g class="l9" transform="translate(0, 440)">
+      <text y="0" class="t c-green">✨ 全部完成，感谢使用！</text>
+      <rect x="175" y="-12" width="8" height="15" class="cursor" />
+    </g>
+  </g>
+</svg>
