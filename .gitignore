@@ -13,6 +13,8 @@ chromeprofile*/
 *.csv
 *.json
 *.md
+!package.json
+!package-lock.json
 !README.md
 !README_EN.md
 !CHANGELOG.md

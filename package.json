@@ -1,0 +1,32 @@
+{
+  "name": "oppo-notes-exporter",
+  "version": "1.0.0",
+  "description": "Export and backup notes from OPPO Cloud (ColorOS) to Markdown, CSV, and JSON.",
+  "main": "src/index.mjs",
+  "type": "module",
+  "bin": {
+    "oppo-notes-exporter": "./bin/cli.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oppo",
+    "coloros",
+    "notes",
+    "backup",
+    "export",
+    "markdown",
+    "obsidian",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright-core": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
