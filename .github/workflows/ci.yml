@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-package-lock
       - name: Syntax check
         run: |
           node --check src/index.mjs
