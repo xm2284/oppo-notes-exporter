@@ -15,6 +15,20 @@ One-click exporter for OPPO Cloud (ColorOS Sticky Notes) to **Markdown, CSV, and
 
 ---
 
+## 💡 Why This Project? (Motivation)
+
+> **"My memories are scattered across my phone notes, yet I couldn't take them with me."**
+
+Like many people, I have used phone sticky notes for years to capture thoughts, exam prep, daily agendas, and project brainstorms. When I wanted to **revisit my past journey and feed these real, raw notes into Large Language Models (LLMs) to construct a personal "Digital Twin" / AI Persona**, I ran into a wall:
+
+1. **Vendor Lock-in**: OPPO Cloud (ColorOS) offers sync across devices, but **no export feature** exists. Manually copying hundreds of notes one by one is painful and impractical.
+2. **Hidden Payload Encryption**: The web interface encrypts data in-transit using AES, rendering traditional scraping techniques useless.
+3. **Data Sovereignty**: Our thoughts belong to us, not a walled garden. Users should have the right to migrate their data anywhere—into Obsidian, Notion, or personal AI agents.
+
+This tool was born out of my own necessity to break free, export 400+ personal notes, and train a personalized AI profile. I am open-sourcing it in hopes that **it helps anyone looking to reclaim their data sovereignty and archive their personal digital footprints.**
+
+---
+
 ## 🌟 Highlights
 
 - **Bypass AES Encryption without Breaking**: OPPO Cloud notes employ AES payload encryption and timestamp signatures. Instead of fragile reverse-engineering, this tool taps directly into the browser runtime via Chrome DevTools Protocol (CDP) to extract decrypted plaintexts.
